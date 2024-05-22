@@ -28,7 +28,7 @@ class MainWindow(tk.Tk):
         self.load()
 
     def create_widgets(self):
-        #backgroung = tk.PhotoImage(file="/Users/andrejbazunov/Desktop/project_with_bd/view/static/bg.png")
+        #backgroung = tk.PhotoImage(file="/Users/andrejbazunov/Desktop/notes/view/static/bg.png")
 
         contanier = tk.Frame(self)
         contanier.pack(expand=True, fill=tk.BOTH, padx=10, pady=10)
