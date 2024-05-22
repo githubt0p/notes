@@ -18,7 +18,7 @@ class NoteDataLogic:
 
     @staticmethod
     def insert(connection, note: Note) -> bool:
-        if note.person_id < 0 or note.text < 0:
+        if note.person_id < 0:
             return False
 
         if note is None:

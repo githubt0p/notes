@@ -68,6 +68,7 @@ class MainWindow(tk.Tk):
         else:
             notes: list[Note] = NoteDataLogic.get_all(self.connection)
         x, y = 0, 0
+
         for note in notes:
             noteview = NoteView(self.listbox, note)
             noteview.set_event(self.__delete_note)

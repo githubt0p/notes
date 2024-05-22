@@ -13,7 +13,7 @@ class CreateWindow(tk.Toplevel):
         self.geometry("300x150")
 
         self.__name = tk.StringVar()
-        self.__text = tk.StringVar(value="0")
+        self.__text = tk.StringVar()
         self.__person_id = tk.StringVar(value="0")
 
         self.create_widgets()
@@ -70,7 +70,7 @@ class CreateWindow(tk.Toplevel):
             self.new_note = Note(
                 None,
                 self.__name.get(),
-                int(self.__text.get()),
+                self.__text.get(),
                 int(self.__person_id.get())
             )
             self.close()

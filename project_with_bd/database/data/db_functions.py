@@ -11,7 +11,7 @@ def get_all(connection: sqlite3.Connection) -> list[Note]:
         notes: list[Note] = []
 
         for data in value:
-            note = note.of(data)
+            note = Note.of(data)
             notes.append(note)
 
         return notes
